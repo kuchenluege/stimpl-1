@@ -350,7 +350,7 @@ def evaluate(expression, state):
           case _:
             raise InterpTypeError("While loop requires a boolean condition.")
 
-      return (body_result, body_type, new_state)
+      return (result, body_type, new_state)
 
     case _:
       raise InterpSyntaxError("Unhandled!")
